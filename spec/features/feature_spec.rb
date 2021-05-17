@@ -10,7 +10,13 @@ feature 'Viewing bookmarks' do
 
   scenario 'viewing bookmarks' do 
     visit('/bookmarks')
-    expect(page).to have_content "www.google.com"
-    expect(page).to have_content "www.expedia.com"
+    expect(page).to have_content "http://www.makersacademy.com"
+    expect(page).to have_content "http://www.destroyallsoftware.com"
+    expect(page).to have_content "http://www.google.com"
   end
 end
+
+# As a time-pressed user
+# So that I can save a website
+# I would like to add the site's address and title to bookmark manager
+
