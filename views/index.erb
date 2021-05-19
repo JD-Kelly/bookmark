@@ -1,5 +1,12 @@
-'Bookmark Manager'
+<h1>Bookmark Manager</h1><br>
 
 <form action="/bookmarks">
-  <input type="submit" value="View Bookmarks"
+<input type="submit" value="View Bookmarks"><br>
+
+<form action="/add" method="post">
+  <label for="bookmark_url">
+    Bookmark url
+    <input type="url" name="bookmark_url">
+  </label>
+  <input type="submit" value="Add Bookmark">
 </form>
